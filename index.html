@@ -1,20 +1,214 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#050505"><meta name="description" content="SHIQI 的个人网站。AI 产品经理，主要关注 Agent 和记忆机制。这里介绍我的实习项目和个人产品实验。"><title>SHIQI / 个人网站</title><link rel="stylesheet" href="style.css"></head>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="SHIQI 的个人网站。AI 产品经理，参与 AI 主机、Agent 与企业 AI 产品设计，也独立构建开源产品和交互实验。">
+  <title>SHIQI / AI 产品经理</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<a class="skip" href="#work">跳至作品</a>
-<header><a class="logo" href="#home" aria-label="SHIQI 首页">SHIQI</a><nav aria-label="主导航"><a href="#work">作品 </a><a href="#about">关于 </a><a href="https://github.com/1ffect" target="_blank" rel="noopener">GitHub ↗</a></nav></header>
-<main>
-<section class="hero" id="home"><video id="growth" muted playsinline autoplay preload="auto" aria-label="银色树枝与蓝色薄片在黑暗中生长的概念视频"><source src="assets/growth.mp4" type="video/mp4"></video><div class="hero-shade"></div><div class="hero-copy"><p class="identity">SHIQI <span>AI 产品经理</span></p><h1><span class="title-line">让我的骨，</span><span class="title-line title-main">成为横亘天地间最直的树<span class="blue-stop">。</span></span></h1><p class="positioning">我叫 SHIQI，目前在做 AI 产品经理实习，主要关注 Agent 和记忆机制。<br>这里介绍我参与的项目，以及自己做的一些产品实验。</p></div><div class="hero-bottom"><a class="scroll-link" href="#work">看看项目 ↗</a><button id="replay" aria-label="重播开场视频">↺ <span>重播开场</span></button></div></section>
-<section class="orbit-section" id="work" aria-label="作品概览"><div class="orbit-sticky"><video id="orbit" muted playsinline preload="auto" poster="assets/orbit.jpg" aria-label="银色脊椎与环绕的三个作品窗口"><source src="assets/orbit.mp4" type="video/mp4"></video><div class="orbit-top"><h2>我做过的项目</h2></div><div class="orbit-caption"><h3 id="chapter-title">AI 主机与记忆机制</h3><p id="chapter-description">我负责的记忆机制前期研究与方案。</p><a id="chapter-link" href="#memory">查看内容 ↗</a></div><div class="orbit-bottom"><div class="track"><i id="progress"></i></div><button id="play-orbit">播放视频 ↗</button></div></div></section>
-<section class="projects section-pad" id="products">
-<h2 class="work-heading">实习项目</h2>
-<article class="case case-memory" id="memory"><p class="case-context">TCL / AI 产品经理实习</p><h2>AI 主机的<br>记忆机制</h2><div class="case-intro"><p>我参与 AI 主机的 Agent 方案设计，主要负责记忆机制的前期研究：AI 应该记住什么，什么时候用，以及用户怎么查看、修改和删除这些记忆。</p><p class="status-note">目前在前期方案阶段，<br>还没有进入正式评审和开发验证。</p></div>
-<details class="case-details"><summary>展开看看 <span>＋</span></summary><div class="case-body"><section><h3>当时要解决的问题</h3><p>项目当时还在讨论产品形态和使用场景。我的工作是先把记忆需要解决的问题理清楚，再比较现有方案能做到什么、还有哪些地方需要自己设计。</p></section><section><h3>我做了什么</h3><p>我看了 15 个开源记忆方案的文档和源码，整理它们如何保存、检索和更新信息，以及各自需要哪些技术支持，供团队讨论和选型。</p></section><section><h3>为什么不能只保存聊天记录</h3><p>保存对话只是第一步。一条信息是否还有效、和当前任务有没有关系，都需要判断。用户改了偏好，旧的信息也不能一直沿用，所以更新和删除同样是方案的一部分。</p></section><section><h3>目前的进展</h3><p>目前选了 Hindsight 作为重点参考，整理了供团队内部讨论的方案，后续还需要评审和工程验证。</p></section></div></details>
-<a class="research-link" href="https://github.com/1ffect/ai-memory" target="_blank" rel="noopener">我的记忆机制研究笔记 ↗<small>基于公开资料整理，不包含公司内部方案。</small></a></article>
-<article class="case case-learning" id="learning"><p class="case-context">企业 AI 提效项目</p><h2>新人学习与<br>问答平台</h2><p class="case-description">最初的任务是“做一个提效工具”。我从新人培训入手，做了一个把学习资料、学习路径和 AI 问答放在一起的平台，让新人能按顺序学习，也能随时查问题。</p><div class="result"><div class="result-number">45<span>天</span><i>→</i>14<span>天</span></div><div class="result-caption"><strong>6 名新人参与试用</strong><p>试用中的上手周期：约 45 天 → 约 14 天。<br>这是小范围试用结果，还没有做大规模验证。</p></div></div>
-<details class="case-details"><summary>展开看看 <span>＋</span></summary><div class="case-body"><section><h3>先了解新人怎么学</h3><p>我访谈了 10 名新人和 4 名带教，最后把重点放在三件事上：按顺序学习、找到产品资料、及时得到问题的回答。</p></section><section><h3>整理资料，搭建平台</h3><p>我重新整理了 3 条产品线、10 个以上型号的知识内容，设计学习路径，并搭建了基于知识库的问答 Agent。</p></section><section><h3>回答不出来时怎么办</h3><p>我把回答失败的情况分开记录，比如资料里没有答案，或者需要人工补充。再根据这些记录补资料、改流程。</p></section><section><h3>试用情况</h3><p>6 名新人参与了试用，AI 问答覆盖率超过 60%。这些反馈帮助我判断第一版的方向是否合适，也留下了后续需要改进的问题。</p></section></div></details></article></section>
-<section class="open-source section-pad" id="open-source"><h2>自己做的一些项目</h2><p class="section-lead">有些想法会直接动手做一版。这两个项目的代码放在 GitHub 上。</p><div class="repo-grid"><article><h3>idol-skill</h3><h4>一个带记忆的角色陪伴实验</h4><p>把公开材料和用户描述整理成角色记忆，尝试让角色在聊天中保持一致。用户觉得回答不对时，可以把反馈写回记忆，继续调整。目前主要通过本地命令行运行。</p><span class="repo-state">个人实验</span><a href="https://github.com/1ffect/idol-skill" target="_blank" rel="noopener">查看项目 ↗</a></article><article><h3>需求评审工作台</h3><h4>把项目资料和需求差异放在一起看</h4><p>一个面向产品经理和项目经理的 Demo，可以查项目、对比需求，也能整理变更和评审记录。想解决的是准备评审时，信息分散、来回查找的问题。</p><span class="repo-state">演示使用样例数据，记录保存在当前浏览器。</span><a href="https://github.com/1ffect/product-requirement-workbench" target="_blank" rel="noopener">查看项目 ↗</a></article></div></section>
-<section class="about section-pad" id="about"><div class="about-grid"><h2>关于我</h2><div><p>我叫 SHIQI，在悉尼大学读计算机科学硕士，方向是 AI 与 Data Science，本科学的是会计。</p><p>目前在做 AI 产品经理实习，主要接触 Agent 和记忆机制，也做过企业学习平台。之前有过 TikTok 数据分析的经历。</p><p>我会把研究和想法做成方案或原型，再根据实际使用中的问题继续调整。</p><p class="opportunity">目前在找 AI 产品经理的工作机会。</p><a class="contact" href="https://github.com/1ffect" target="_blank" rel="noopener">GitHub ↗</a></div><aside class="supporting-experience" id="experiments"><h3>工作之外</h3><p>我也做过 AI 图片和视频，在微博、抖音上分享后，有些内容获得了比较多的关注。反复生成、筛选和看评论，让我对模型在哪些地方容易出错、用户在意什么，有了更具体的认识。这些经验也给我做 AI 产品提供了参考。</p><details class="creative-notes"><summary>看看这段经历 <span>＋</span></summary><div class="creative-notes-body"><p>创作时，我经常要处理人物不一致、动作不自然、镜头接不上的问题。需要先分清问题出在哪里，再调整提示词、参考素材或制作流程，而不是只看一次生成的结果。</p><p>发布后的评论和反馈，则让我看到自己的判断和用户感受有哪些差别。</p><p class="account-evidence">微博与抖音累计约 2.7 万粉丝；单条重点内容获得 50 万以上播放、11 万以上点赞。这些是账号数据，不对应下面两段网站视频。</p><div class="supporting-films"><button id="watch-growth" type="button">网站开场视频 ↗</button><button id="watch-orbit" type="button">作品展示视频 ↗</button></div></div></details></aside><div class="signature" aria-hidden="true">SHIQI<span>↗</span></div></div></section>
-</main><footer><a class="logo" href="#home">SHIQI</a><span>让我的骨，成为横亘天地间最直的树。</span><a href="#home">回到顶部 ↑</a><span>© 2026 SHIQI</span></footer>
+<a class="skip" href="#work">跳至项目</a>
+<header class="site-header">
+  <a class="logo" href="#home" aria-label="SHIQI 首页">SHIQI</a>
+  <nav aria-label="主导航">
+    <a href="#work">项目</a>
+    <a href="#practice">练习</a>
+    <a href="#about">关于</a>
+    <a href="https://github.com/1ffect" target="_blank" rel="noopener">GitHub ↗</a>
+  </nav>
+</header>
+
+<main id="main-content">
+  <section class="hero" id="home">
+    <video id="growth" muted playsinline autoplay preload="auto" poster="assets/growth.jpg" aria-label="银色树枝与蓝色薄片在黑暗中生长的概念视频">
+      <source src="assets/growth.mp4" type="video/mp4">
+    </video>
+    <div class="hero-shade"></div>
+    <div class="hero-copy">
+      <h1><span class="title-line">让我的骨，</span><span class="title-line">成为横亘天地间</span><span class="title-line">一棵笔直的树<span class="blue-stop">。</span></span></h1>
+      <p class="positioning"><strong>SHIQI，AI 产品经理。</strong><br>参与 AI 主机、Agent 与企业 AI 产品设计，也独立构建开源产品和交互实验。</p>
+    </div>
+    <div class="hero-bottom">
+      <a class="scroll-link" href="#work">向下看项目 ↓</a>
+      <button id="replay" type="button" aria-label="重播开场视频">↺ <span>重播开场</span></button>
+    </div>
+  </section>
+
+  <section class="orbit-section" id="work" aria-labelledby="work-title">
+    <div class="orbit-sticky">
+      <div class="spine-stage" aria-hidden="true">
+        <model-viewer id="orbit-model" src="assets/models/futuristic-spine.glb" alt="" camera-orbit="18deg 78deg 76%" field-of-view="25deg" interaction-prompt="none" shadow-intensity="0" environment-image="neutral" exposure="1.18"></model-viewer>
+      </div>
+      <div class="orbit-cards" aria-label="主要项目窗口">
+        <button class="orbit-card" type="button" data-card="0" data-project="ai-host" aria-label="打开 AI 主机产品设计项目">
+          <i class="glass-back" aria-hidden="true"></i><i class="glass-body" aria-hidden="true"></i><i class="glass-print" aria-hidden="true"></i>
+          <span class="window-copy"><strong lang="en"><span>AI HOST</span><span>DESIGN</span></strong><small lang="en"><span>PRODUCT SYSTEM</span><span>AGENT MEMORY</span><span>ADAPTIVE UI</span></small><i class="window-rule" aria-hidden="true"></i></span>
+          <i class="glass-film" aria-hidden="true"></i>
+        </button>
+        <button class="orbit-card" type="button" data-card="1" data-project="learning" aria-label="打开新人学习与问答平台项目">
+          <i class="glass-back" aria-hidden="true"></i><i class="glass-body" aria-hidden="true"></i><i class="glass-print" aria-hidden="true"></i>
+          <span class="window-copy"><strong lang="en"><span>LEARNING</span><span>PLATFORM</span></strong><small lang="en"><span>SAAS PRODUCT</span><span>RAG Q&amp;A</span><span>MVP VALIDATION</span></small><i class="window-rule" aria-hidden="true"></i></span>
+          <i class="glass-film" aria-hidden="true"></i>
+        </button>
+        <button class="orbit-card" type="button" data-card="2" data-project="ai-memory" aria-label="打开 AI 记忆机制研究看板项目">
+          <i class="glass-back" aria-hidden="true"></i><i class="glass-body" aria-hidden="true"></i><i class="glass-print" aria-hidden="true"></i>
+          <span class="window-copy"><strong lang="en"><span>MEMORY</span><span>SYSTEMS</span></strong><small lang="en"><span>OPEN-SOURCE</span><span>MEMORY RESEARCH</span><span>INTERACTIVE ATLAS</span></small><i class="window-rule" aria-hidden="true"></i></span>
+          <i class="glass-film" aria-hidden="true"></i>
+        </button>
+        <button class="orbit-card" type="button" data-card="3" data-project="workbench" aria-label="打开需求评审工作台项目">
+          <i class="glass-back" aria-hidden="true"></i><i class="glass-body" aria-hidden="true"></i><i class="glass-print" aria-hidden="true"></i>
+          <span class="window-copy"><strong lang="en"><span>REVIEW</span><span>WORKBENCH</span></strong><small lang="en"><span>PROJECT SEARCH</span><span>REQUIREMENT DIFF</span><span>REVIEW WORKFLOW</span></small><i class="window-rule" aria-hidden="true"></i></span>
+          <i class="glass-film" aria-hidden="true"></i>
+        </button>
+        <button class="orbit-card" type="button" data-card="4" data-project="idol-skill" aria-label="打开 idol-skill 项目">
+          <i class="glass-back" aria-hidden="true"></i><i class="glass-body" aria-hidden="true"></i><i class="glass-print" aria-hidden="true"></i>
+          <span class="window-copy"><strong lang="en"><span>IDOL</span><span>SKILL</span></strong><small lang="en"><span>LAYERED MEMORY</span><span>EMOTION ROUTING</span><span>OOC CORRECTION</span></small><i class="window-rule" aria-hidden="true"></i></span>
+          <i class="glass-film" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="orbit-top"><h2 id="work-title">产品判断</h2><p>骨骼模型由我使用 Blender 制作</p></div>
+      <div class="orbit-caption">
+        <h3 id="chapter-title">AI 主机产品设计</h3>
+        <p id="chapter-description">核心 Agent 产品方案与记忆机制 0→1 前期设计。</p>
+        <button id="chapter-open" type="button" data-project="ai-host">点击窗口查看 ↗</button>
+      </div>
+      <div class="orbit-bottom"><div class="track"><i id="progress"></i></div><span>滚动切换 · 点击展开</span></div>
+    </div>
+  </section>
+
+  <section class="practice" id="practice" aria-labelledby="practice-title">
+    <div class="practice-intro">
+      <h2 id="practice-title">练习与片段。</h2>
+      <p>用代码/ 建模/ AIGC/ Agent 把想法实现出来。</p>
+    </div>
+    <div class="practice-field">
+      <button class="practice-media practice-media-growth" id="watch-growth" type="button" aria-label="播放网站开场视频">
+        <img src="assets/growth.jpg" alt="开场动画">
+        <span>生长 / 开场概念动画</span>
+      </button>
+      <figure class="practice-media practice-media-paper">
+        <video controls playsinline preload="metadata" poster="assets/creative-practice.jpg" aria-label="纸张、手绘线条与桌面日历构成的动态影像">
+          <source src="assets/creative-practice.mp4" type="video/mp4">
+        </video>
+        <figcaption>纸页 - 日历 - 电脑 / Blender 动态练习</figcaption>
+      </figure>
+      <button class="practice-media practice-media-orbit" id="watch-orbit" type="button" aria-label="播放骨骼与窗口概念影像">
+        <img src="assets/orbit.jpg" alt="金属骨骼与蓝色光线组成的窗口概念影像画面">
+        <span>骨与轨道概念</span>
+      </button>
+      <div class="practice-links" aria-label="更多小型项目">
+        <a href="https://github.com/1ffect/ecommerce-sales-research-skill" target="_blank" rel="noopener"><strong>Ecommerce Sales Research Skill</strong><span>区域关键词、销售数据清洗与人工复核工作流 ↗</span></a>
+        <a href="https://github.com/1ffect/Rebirth" target="_blank" rel="noopener"><strong>Rebirth</strong><span>JavaScript 交互练习 ↗</span></a>
+        <a href="https://github.com/1ffect/AutumnPoem" target="_blank" rel="noopener"><strong>AutumnPoem</strong><span>视觉小说 ↗</span></a>
+        <a href="https://github.com/1ffect/heart" target="_blank" rel="noopener"><strong>heart</strong><span>爱心3D粒子动捕 ↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-proof" id="social" aria-labelledby="social-title">
+    <div class="social-copy">
+      <h2 id="social-title">发布之后。</h2>
+      <p>我独立完成选题、Prompt、生成、筛选、剪辑、发布和复盘。评论与互动让我看到自己的判断和用户感受在哪里一致、又在哪里偏离。</p>
+      <p class="social-note">以下是账号数据。</p>
+      <div class="social-evidence" aria-label="社交账号主页截图">
+        <figure><img src="assets/social-douyin.jpg" alt="抖音账号主页截图，显示 1.1 万粉丝" loading="lazy"><figcaption>抖音主页 · 1.1 万粉丝</figcaption></figure>
+        <figure><img src="assets/social-weibo.jpg" alt="微博账号主页截图，显示 1.6 万粉丝" loading="lazy"><figcaption>微博主页 · 1.6 万粉丝</figcaption></figure>
+      </div>
+    </div>
+    <div class="social-numbers" aria-label="社交账号成果">
+      <div class="social-total"><strong>2.7<span>万</span></strong><p>微博与抖音<br>累计粉丝</p></div>
+      <div><strong>50<span>万+</span></strong><p>单条重点内容播放</p></div>
+      <div><strong>11<span>万+</span></strong><p>单条重点内容点赞</p></div>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="about-grid">
+      <h2 id="about-title">关于我</h2>
+      <div>
+        <p>我叫彭诗琪，悉尼大学计算机科学硕士，方向是 AI 与 Data Science，本科学的是会计。</p>
+        <p>我做过 AI Agent 产品设计、记忆机制方案、RAG 应用落地和数据评估，也会用 Python、HTML、JavaScript、Three.js 与 WebGL 把研究和想法做成可运行的原型。</p>
+        <p>目前在寻找 AI 产品经理的工作机会。</p>
+      </div>
+    </div>
+    <div class="signature" aria-hidden="true"></div>
+  </section>
+</main>
+
+<footer><a class="logo" href="#home">SHIQI</a><span>AI 产品经理 / Agent / Memory / AUI</span><a href="#home">回到顶部 ↑</a><span>© 2026 SHIQI</span></footer>
+
+<div class="project-overlays" aria-live="polite">
+  <article class="project-overlay" id="project-ai-host" data-project-panel="ai-host" aria-labelledby="project-ai-host-title" hidden>
+    <button class="overlay-close" type="button" data-close-project aria-label="关闭 AI 主机产品设计项目">关闭 ×</button>
+    <div class="overlay-hero"><p>核心职业项目 · TCL AI 产品经理实习</p><h2 id="project-ai-host-title">AI 主机产品设计</h2><p class="overlay-lead">在产品形态与核心场景尚未收敛时，我负责核心 Agent 产品方案，并先行完成记忆机制的能力定义、技术预研与前期方案设计。</p></div>
+    <div class="overlay-facts"><span>核心 Agent 产品方案</span><span>记忆机制 0→1 前期方案 Owner</span><span>尚未进入正式工程验证</span></div>
+    <div class="overlay-story">
+      <section><h3>项目要回答什么</h3><p>AI 主机作为独立硬件，如何区别于 PC、手机、云端 Agent 与自部署工具？我围绕办公任务、本地资源调用、跨端协同、智能终端联动与长任务执行，参与梳理目标用户、核心任务和首版能力范围。</p></section>
+      <section><h3>我负责的核心部分</h3><p>AI 主机 Agent 是产品核心价值之一。我主要负责 Agent 产品方案，并作为记忆机制 0→1 前期方案 Owner，定义记忆与上下文、聊天记录和业务事实的边界。</p></section>
+      <section><h3>15 个方案如何变成产品判断</h3><p>通过市场调研、文档调研与源码分析，我比较 15 个开源记忆方案的产品定位、能力链路、技术依赖和场景适用性，围绕写入、组织、检索调用、更新与失效、用户可控和隐私边界形成方案，初步选定 Hindsight 为重点参考。</p></section>
+      <section><h3>不只设计“记住”</h3><p>我同时研究 AI OS、AUI 与端云协同，围绕任务进度、权限授权、关键节点确认、异常回退、人工接管、执行日志和结果追溯设计交互原则。</p></section>
+      <section><h3>当前边界</h3><p>目前完成的是产品团队内部讨论分析，尚未进入正式评审、测试验证、工程实施和线上调优。因此这里展示产品判断与研究过程，不把未发生的验证包装成成果。</p></section>
+    </div>
+    <div class="overlay-end"><p>相关的公开研究被整理成独立的 AI 记忆机制研究看板，不包含公司内部方案。</p><a href="https://github.com/1ffect/ai-memory" target="_blank" rel="noopener">查看公开研究 GitHub ↗</a></div>
+  </article>
+
+  <article class="project-overlay" id="project-learning" data-project-panel="learning" aria-labelledby="project-learning-title" hidden>
+    <button class="overlay-close" type="button" data-close-project aria-label="关闭新人学习与问答平台项目">关闭 ×</button>
+    <div class="overlay-hero"><p>企业 AI 提效项目 · AI 产品经理实习</p><h2 id="project-learning-title">新人学习与问答平台</h2><p class="overlay-lead">从“做一个提效工具”的模糊目标出发，我找到新人培训场景，并把结构化学习、产品知识检索和即时问答收敛成可交付、可测试的 MVP。</p></div>
+    <div class="overlay-metric"><strong>45<span>天</span></strong><i>→</i><strong>14<span>天</span></strong><p>6 名新人灰度样本中的上手周期变化</p></div>
+    <div class="overlay-story">
+      <section><h3>先确定谁真的需要帮助</h3><p>我访谈 10 名新人和 4 名带教，把宽泛的“提效”收敛为三类任务：按顺序学习、快速找到产品资料，以及在遇到问题时及时得到回答。</p></section>
+      <section><h3>把分散资料变成知识结构</h3><p>我覆盖 3 条产品线和 10 个以上型号，按四层学习路径重组资料，拆解 40 多个知识点和 100 多个 FAQ，并建立 ID、标签和 URL 映射。</p></section>
+      <section><h3>学习平台与 Agent 协同</h3><p>我使用 HTML 与 JavaScript 完成平台前端，在办公协作平台搭建知识库 Agent，配置分层检索与 Prompt，并输出知识结构、功能说明、产品流程与问答 SOP。</p></section>
+      <section><h3>回答失败也要留下信息</h3><p>问题被分为“可独立回答”“需人工补充”和“知识库缺失”。缺失问题、不稳定回答和新增 FAQ 会重新回流知识库与 Prompt，形成可以持续迭代的闭环。</p></section>
+      <section><h3>小样本验证</h3><p>项目先进行 3 人内部测试，再由 6 名新人灰度试用。6 人样本中，上手周期由约 45 天缩短到约 14 天，AI 问答覆盖率超过 60%；这一结果只用于验证 MVP 方向，不外推为全量业务效果。</p></section>
+    </div>
+  </article>
+
+  <article class="project-overlay" id="project-ai-memory" data-project-panel="ai-memory" aria-labelledby="project-ai-memory-title" hidden>
+    <button class="overlay-close" type="button" data-close-project aria-label="关闭 AI 记忆机制研究看板项目">关闭 ×</button>
+    <div class="overlay-hero"><p>个人开源技术研究与交互原型</p><h2 id="project-ai-memory-title">AI 记忆机制研究看板</h2><p class="overlay-lead">我把公开记忆项目从“仓库列表”拆成可比较、可操作的研究系统，再把复杂机制做成可以播放和调整的交互看板。</p></div>
+    <div class="overlay-facts"><span>15 个公开项目</span><span>9 个研究板块</span><span>5 类架构原型</span><span>6 层评测链路</span></div>
+    <div class="overlay-story">
+      <section><h3>研究框架</h3><p>项目将记忆映射到写入、存储、检索、上下文、回答和生命周期，区分公开证据、产品推断与待验证风险。</p></section>
+      <section><h3>不是静态长文</h3><p>看板包含四张交互式 SVG 图、工作流播放与暂停、七种更新案例、上下文预算模拟，以及十五个开源案例的九维架构剖面。</p></section>
+      <section><h3>评测边界</h3><p>我对照 LoCoMo、LongMemEval、MemoryAgentBench 与 LongMemEval-V2，明确数据版本、模型、检索预算、Judge 和 Prompt 都会影响比较结果。教学示意不被包装成生产性能测试。</p></section>
+    </div>
+    <div class="overlay-actions"><a href="https://1ffect.github.io/ai-memory/" target="_blank" rel="noopener">打开在线看板 ↗</a><a href="https://github.com/1ffect/ai-memory" target="_blank" rel="noopener">查看 GitHub ↗</a></div>
+  </article>
+
+  <article class="project-overlay" id="project-workbench" data-project-panel="workbench" aria-labelledby="project-workbench-title" hidden>
+    <button class="overlay-close" type="button" data-close-project aria-label="关闭需求评审工作台项目">关闭 ×</button>
+    <div class="overlay-hero"><p>独立完成的脱敏产品 Demo</p><h2 id="project-workbench-title">需求评审工作台</h2><p class="overlay-lead">把客户项目、历史定制需求、产品基线、变更和评审记录放在同一个工作台里，减少准备评审时反复查找资料的成本。</p></div>
+    <div class="overlay-facts"><span>Dashboard</span><span>客户项目库</span><span>需求矩阵</span><span>变更与评审记录</span></div>
+    <div class="overlay-story">
+      <section><h3>从真实工作问题抽象数据对象</h3><p>我把客户项目、历史需求、默认配置、交付周期、配置基线、变更和评审等信息拆成可查询、可追踪的数据对象。</p></section>
+      <section><h3>可以实际操作的前端</h3><p>Demo 支持关键词、客户、区域、型号和年份筛选；项目详情包含概览、需求矩阵、附件资产、变更记录和评审记录五个页签。</p></section>
+      <section><h3>公开边界</h3><p>仓库不包含真实客户、负责人、编号、备注或文件名，公开版本使用样例数据；新增项目和评审记录仅保存在当前浏览器。</p></section>
+    </div>
+    <div class="overlay-actions"><a href="https://github.com/1ffect/product-requirement-workbench" target="_blank" rel="noopener">查看 GitHub ↗</a></div>
+  </article>
+
+  <article class="project-overlay" id="project-idol-skill" data-project-panel="idol-skill" aria-labelledby="project-idol-title" hidden>
+    <button class="overlay-close" type="button" data-close-project aria-label="关闭 idol-skill 项目">关闭 ×</button>
+    <div class="overlay-hero"><p>个人开源情感陪伴 Agent</p><h2 id="project-idol-title">idol-skill</h2><p class="overlay-lead">把公开物料与用户主观记忆蒸馏成高光时期的陪伴人格，并允许用户通过反馈持续纠正它，而不是只生成一次固定人设。</p></div>
+    <div class="overlay-facts"><span>Agent Skill</span><span>Python CLI</span><span>分层记忆</span><span>Local-first</span></div>
+    <div class="overlay-story">
+      <section><h3>从材料到可确认的记忆</h3><p>流程包含材料导入、清洗与标签化、用户预览确认、索引构建和记忆检索。原始材料不会未经确认就直接污染角色记忆。</p></section>
+      <section><h3>角色一致性不是一段 Prompt</h3><p>我设计核心、情感、动态、增强和纠偏等记忆层，并建立四类 Persona Matrix、情绪路由、说话节奏、安全规则与检索权重。</p></section>
+      <section><h3>持续修正</h3><p>当用户认为回答不符合角色时，反馈会进入 OOC 纠偏流程并回写修正规则。项目同时提供评测脚本、示例数据、无 API fallback 与 Skill 导出能力。</p></section>
+      <section><h3>当前状态</h3><p>项目已发布 v0.1.0，适合作为 Agent Skill、Python CLI 或交互原型使用；它不是已经商业化或拥有大规模活跃用户的线上产品。</p></section>
+    </div>
+    <div class="overlay-actions"><a href="https://github.com/1ffect/idol-skill" target="_blank" rel="noopener">查看 GitHub ↗</a></div>
+  </article>
+</div>
+
 <dialog id="cinema"><div class="cinema-head"><span id="film-title">CONCEPT FILM</span><button id="close-cinema" aria-label="关闭视频">关闭 ×</button></div><video id="film" controls playsinline></video></dialog>
-<script src="assets/gsap.min.js"></script><script src="assets/ScrollTrigger.min.js"></script><script src="app.js"></script></body></html>
+<script type="module" src="assets/model-viewer.min.js"></script>
+<script src="assets/gsap.min.js"></script>
+<script src="assets/ScrollTrigger.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
