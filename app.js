@@ -127,18 +127,18 @@ if(hasGSAP&&!reduced){
     onUpdate:()=>showChapter(orbitState.progress),
     scrollTrigger:{trigger:orbitSection,start:'top top',end:()=>`+=${innerHeight*5.2}`,pin:'.orbit-sticky',scrub:1,invalidateOnRefresh:true}
   });
-  ScrollTrigger.batch('.practice-media,.practice-links a',{
+  ScrollTrigger.batch('.lab-piece,.lab-orbit,.lab-projects,.lab-publish',{
     start:'top 88%',
     once:true,
     interval:.08,
     batchMax:3,
     onEnter:items=>gsap.from(items,{y:34,autoAlpha:0,duration:.8,stagger:.1,ease:'power3.out',overwrite:'auto'})
   });
-  gsap.from('.social-numbers>div',{y:38,autoAlpha:0,duration:.85,stagger:.12,ease:'power3.out',scrollTrigger:{trigger:'.social-numbers',start:'top 78%',once:true}});
   gsap.from('.about-grid>*',{y:32,duration:.8,stagger:.12,ease:'power3.out',scrollTrigger:{trigger:'.about-grid',start:'top 78%',once:true}});
   document.fonts.ready.then(()=>ScrollTrigger.refresh());
   addEventListener('load',()=>ScrollTrigger.refresh());
   orbitModel?.addEventListener('load',()=>ScrollTrigger.refresh(),{once:true});
+  document.querySelector('.lab-specimen model-viewer')?.addEventListener('load',()=>ScrollTrigger.refresh(),{once:true});
 }
 
 addEventListener('resize',()=>{
